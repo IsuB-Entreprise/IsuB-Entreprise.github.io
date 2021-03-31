@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #645c74;
+}
+body {
+  background: #eee;
+}
+nav {
+  width: 100%;
+  background: #c4b4dc;
+  box-shadow: 0 0 3px #333;
+  position: fixed;
+  transition: all 0.3s ease-out;
+  font-family: 'Ubuntu', sans-serif;
+}
+.nav-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 7vh;
+  transition: all 0.3s ease-out;
+}
+.nav-elements a {
+  color: #645c74;
+  text-decoration: none;
+}
+.nav-elements a:visited {
+  color: #645c74;
+}
+.nav-elements h2 {
+  transition: all .3s ease-in-out;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav-links, h2 {
+  flex: 1;
+  color: #645c74;
+}
+.nav-links li {
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+.nav-elements h2:hover {
+  font-weight: 100;
+  font-family: 'Ubuntu', sans-serif;
+}
+.nav-links li:hover {
+  transform: translateX(10px);
+  font-weight: bold;
+}
+
+h1 {
+  padding: 1.5rem;
+  font-family: 'Courgette', sans-serif;
+}
+p {
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+}
+p::first-letter {
+  font-size: 1.5rem;
+  color: #c4b4dc;
+  font-family: 'Courgette', sans-serif;
+}
+.title1 {
+  display: flex;
+  padding: 6rem 1rem 1rem 0;
+  margin-bottom: 3rem;
+}
+.dummy-title1 {
+  padding: 2rem 2rem 2rem 0;
+}
+.title1 img {
+  width: 30%;
+  height: 30%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+.title2 {
+  padding: 1rem;
+  margin-bottom: 3rem;
+  transition: .5s ease-in;
+}
+.title2 h1 {
+  text-align: right;
+  padding-right: 17%;
+}
+#img-title2 {
+  width: 60%;
+  padding: 2rem;
+  transform: translateX(-200px);
+  transition: .5s ease-in;
+  opacity: 0;
+}
+.dummy-title2 {
+  display: flex;
+}
+.title3 {
+  padding: 2rem;
+  background: rgba(196, 180, 220, 0);
+  transition: .3s ease-in;
+}
+.title3 h1 {
+  text-align: center;
+}
+.title3 img {
+  width: 100%;
+  opacity: 1;
+  transition: .5s ease-in;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .nav-elements {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 999px) {
+  main {
+    padding: 0 2rem;
+  }
+}
